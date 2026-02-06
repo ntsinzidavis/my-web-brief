@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Test your gardening knowledge with interactive quizzes on plant basics, watering techniques, and pest management">
+    <title>Gardening Quizzes | GreenThumb Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header with sticky navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-leaf"></i>
+                GreenThumb Learning
+            </a>
+            
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Learning Resources</a></li>
+                    <li><a href="quizzes.html" class="active">Quizzes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main id="main-content">
+        <!-- Page header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Test Your Gardening Knowledge</h1>
+                <p>Take these interactive quizzes to check your understanding and track your progress as you learn.</p>
+            </div>
+        </section>
+
+        <!-- Quizzes section -->
+        <section class="section">
+            <div class="container">
+                <!-- Quiz 1: Plant Basics -->
+                <div class="quiz-section" id="quiz-1">
+                    <div class="quiz-header">
+                        <h2>Quiz 1: Plant Basics</h2>
+                        <div class="score-display">Score: <span id="score-1">0</span>/5</div>
+                    </div>
+                    <div class="quiz-progress">
+                        <span>Progress:</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-1"></div>
+                        </div>
+                        <span id="progress-text-1">0/5</span>
+                    </div>
+                    <div class="question-container">
+                        <h3 id="question-1">Question 1: What is the primary function of a plant's roots?</h3>
+                    </div>
+                    <div class="options-container" id="options-1">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                    <div class="quiz-feedback" id="feedback-1"></div>
+                    <div class="quiz-navigation">
+                        <button class="btn" id="prev-1" disabled>Previous</button>
+                        <button class="btn" id="next-1">Next</button>
+                        <button class="btn btn-secondary" id="submit-1" style="display: none;">Submit Quiz</button>
+                    </div>
+                </div>
+
+                <!-- Quiz 2: Watering Techniques -->
+                <div class="quiz-section" id="quiz-2">
+                    <div class="quiz-header">
+                        <h2>Quiz 2: Watering Techniques</h2>
+                        <div class="score-display">Score: <span id="score-2">0</span>/4</div>
+                    </div>
+                    <div class="quiz-progress">
+                        <span>Progress:</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-2"></div>
+                        </div>
+                        <span id="progress-text-2">0/4</span>
+                    </div>
+                    <div class="question-container">
+                        <h3 id="question-2">Question 1: What is the best time of day to water your garden?</h3>
+                    </div>
+                    <div class="options-container" id="options-2">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                    <div class="quiz-feedback" id="feedback-2"></div>
+                    <div class="quiz-navigation">
+                        <button class="btn" id="prev-2" disabled>Previous</button>
+                        <button class="btn" id="next-2">Next</button>
+                        <button class="btn btn-secondary" id="submit-2" style="display: none;">Submit Quiz</button>
+                    </div>
+                </div>
+
+                <!-- Quiz 3: Pest Management -->
+                <div class="quiz-section" id="quiz-3">
+                    <div class="quiz-header">
+                        <h2>Quiz 3: Pest Management</h2>
+                        <div class="score-display">Score: <span id="score-3">0</span>/5</div>
+                    </div>
+                    <div class="quiz-progress">
+                        <span>Progress:</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-3"></div>
+                        </div>
+                        <span id="progress-text-3">0/5</span>
+                    </div>
+                    <div class="question-container">
+                        <h3 id="question-3">Question 1: Which of these is a natural pest deterrent?</h3>
+                    </div>
+                    <div class="options-container" id="options-3">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                    <div class="quiz-feedback" id="feedback-3"></div>
+                    <div class="quiz-navigation">
+                        <button class="btn" id="prev-3" disabled>Previous</button>
+                        <button class="btn" id="next-3">Next</button>
+                        <button class="btn btn-secondary" id="submit-3" style="display: none;">Submit Quiz</button>
+                    </div>
+                </div>
+
+                <!-- Quiz instructions -->
+                <div class="quiz-section" style="background-color: #E8F5E9;">
+                    <h2>How to Use These Quizzes</h2>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                        <li>Read each question carefully and select the answer you think is correct</li>
+                        <li>You'll get immediate feedback after selecting an answer</li>
+                        <li>Use the Previous and Next buttons to navigate between questions</li>
+                        <li>Submit the quiz when you've answered all questions to see your final score</li>
+                        <li>Review the learning resources if you need to improve your score</li>
+                    </ul>
+                    <p><strong>Tip:</strong> Try to score at least 80% on each quiz to ensure you've mastered the topic!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for detailed topic information -->
+    <div class="modal-overlay" id="topic-modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content" id="modal-content">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        GreenThumb Learning
+                    </div>
+                    <p>Your comprehensive platform for learning gardening techniques, plant care, and sustainable practices.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resources.html">Learning Resources</a></li>
+                        <li><a href="quizzes.html">Quizzes</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 GreenThumb Learning Platform. All rights reserved.</p>
+                <p>This website is for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

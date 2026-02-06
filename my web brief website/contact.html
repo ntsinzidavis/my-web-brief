@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact GreenThumb Learning with your gardening questions, feedback, or requests">
+    <title>Contact Us | GreenThumb Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header with sticky navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-leaf"></i>
+                GreenThumb Learning
+            </a>
+            
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html">Learning Resources</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main id="main-content">
+        <!-- Page header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Have questions about gardening or our platform? Send us a message and we'll get back to you as soon as possible.</p>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>We're here to help with any gardening questions or platform feedback you might have. Our team of gardening experts typically responds within 24-48 hours.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Our Location</h3>
+                                <p>123 Garden Street, Greenville, GT 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@greenthumblearning.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>(555) 123-4567</p>
+                                <p>Monday - Friday, 9am - 5pm EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3>Response Time</h3>
+                                <p>We aim to respond to all inquiries within 24-48 hours during business days.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h2>Send a Message</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name *</label>
+                                <input type="text" id="name" class="form-control" required>
+                                <div class="error-message" id="name-error">Please enter your name.</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Your Email *</label>
+                                <input type="email" id="email" class="form-control" required>
+                                <div class="error-message" id="email-error">Please enter a valid email address.</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <input type="text" id="subject" class="form-control" required>
+                                <div class="error-message" id="subject-error">Please enter a subject.</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message *</label>
+                                <textarea id="message" class="form-control" required></textarea>
+                                <div class="error-message" id="message-error">Please enter your message.</div>
+                            </div>
+                            
+                            <button type="submit" class="btn form-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ section -->
+        <section class="section" style="background-color: var(--white);">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-content">
+                            <h3>Is the platform really free?</h3>
+                            <p>Yes! GreenThumb Learning is completely free to use. We believe gardening knowledge should be accessible to everyone.</p>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-content">
+                            <h3>Can I request a specific gardening topic?</h3>
+                            <p>Absolutely! We're always looking for new topics to cover. Use the contact form to suggest topics you'd like us to add.</p>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-content">
+                            <h3>Do you offer personalized gardening advice?</h3>
+                            <p>While we can't provide personalized consultations, we do our best to answer general gardening questions through our contact form.</p>
+                        </div>
+                    </div>
+                    <div class="topic-card">
+                        <div class="topic-content">
+                            <h3>Can I contribute content to the platform?</h3>
+                            <p>We welcome contributions from experienced gardeners! Contact us with your ideas and writing samples.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for detailed topic information -->
+    <div class="modal-overlay" id="topic-modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content" id="modal-content">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        GreenThumb Learning
+                    </div>
+                    <p>Your comprehensive platform for learning gardening techniques, plant care, and sustainable practices.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resources.html">Learning Resources</a></li>
+                        <li><a href="quizzes.html">Quizzes</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 GreenThumb Learning Platform. All rights reserved.</p>
+                <p>This website is for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

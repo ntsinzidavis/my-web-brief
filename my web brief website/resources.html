@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive gardening guides and tutorials on soil preparation, composting, pest control, and more">
+    <title>Learning Resources | GreenThumb Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header with sticky navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-leaf"></i>
+                GreenThumb Learning
+            </a>
+            
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resources.html" class="active">Learning Resources</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main id="main-content">
+        <!-- Page header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Learning Resources</h1>
+                <p>Explore our comprehensive gardening guides and tutorials. Click "Read More" for detailed information on each topic.</p>
+            </div>
+        </section>
+
+        <!-- Topics section -->
+        <section class="section">
+            <div class="container">
+                <div class="topics-grid" id="topics-container">
+                    <!-- Topics will be loaded via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional resources section -->
+        <section class="section" style="background-color: var(--white);">
+            <div class="container">
+                <h2 class="section-title">Additional Gardening Resources</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Seasonal Planting Calendar</h3>
+                        <p>Know what to plant and when with our month-by-month gardening calendar tailored to different climate zones.</p>
+                        <a href="#" class="btn" style="margin-top: 1rem; width: 100%;">Coming Soon</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Tutorials</h3>
+                        <p>Watch step-by-step video guides for common gardening tasks like pruning, transplanting, and pest control.</p>
+                        <a href="#" class="btn" style="margin-top: 1rem; width: 100%;">Coming Soon</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tool Guides</h3>
+                        <p>Learn about essential gardening tools, how to use them properly, and how to maintain them for longevity.</p>
+                        <a href="#" class="btn" style="margin-top: 1rem; width: 100%;">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for detailed topic information -->
+    <div class="modal-overlay" id="topic-modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content" id="modal-content">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        GreenThumb Learning
+                    </div>
+                    <p>Your comprehensive platform for learning gardening techniques, plant care, and sustainable practices.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resources.html">Learning Resources</a></li>
+                        <li><a href="quizzes.html">Quizzes</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 GreenThumb Learning Platform. All rights reserved.</p>
+                <p>This website is for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

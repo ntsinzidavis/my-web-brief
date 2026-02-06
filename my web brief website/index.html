@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn gardening techniques, plant care, and sustainable practices with our interactive platform">
+    <title>GreenThumb Learning | Gardening Education Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Header with sticky navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-leaf"></i>
+                GreenThumb Learning
+            </a>
+            
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="resources.html">Learning Resources</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main id="main-content">
+        <!-- Home page hero section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Grow Your Gardening Knowledge</h1>
+                <p>Learn everything from basic plant care to advanced horticulture techniques with our interactive gardening platform. Perfect for beginners and experienced gardeners alike.</p>
+                <div class="hero-buttons">
+                    <a href="resources.html" class="btn">Start Learning</a>
+                    <a href="quizzes.html" class="btn btn-secondary">Test Your Knowledge</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features section on home page -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">What You'll Learn</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Plant Basics</h3>
+                        <p>Understand plant biology, soil composition, and the fundamentals of plant care for healthy growth.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Watering Techniques</h3>
+                        <p>Learn proper watering schedules, methods, and how to identify over/under watering issues.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>Pest Management</h3>
+                        <p>Identify common garden pests and diseases and learn organic solutions to protect your plants.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Seasonal Gardening</h3>
+                        <p>Plan your garden throughout the year with our seasonal planting guides and tips.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3>Sustainable Practices</h3>
+                        <p>Learn composting, water conservation, and other eco-friendly gardening techniques.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Edible Gardening</h3>
+                        <p>Grow your own vegetables, herbs, and fruits with our step-by-step guides.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="section" style="background-color: var(--white);">
+            <div class="container">
+                <div class="about-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+                    <div>
+                        <h2 class="section-title" style="text-align: left;">About Our Platform</h2>
+                        <p>GreenThumb Learning is dedicated to making gardening knowledge accessible to everyone. Whether you're starting your first herb garden on a windowsill or managing a large vegetable plot, we provide clear, practical guidance.</p>
+                        <p>Our content is created by experienced horticulturists and gardeners, ensuring you get accurate, tested information that actually works in real gardens.</p>
+                        <a href="resources.html" class="btn" style="margin-top: 1rem;">Explore Our Resources</a>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Person gardening in a backyard" style="border-radius: var(--border-radius);">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for detailed topic information (included on all pages) -->
+    <div class="modal-overlay" id="topic-modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-content" id="modal-content">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        GreenThumb Learning
+                    </div>
+                    <p>Your comprehensive platform for learning gardening techniques, plant care, and sustainable practices.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resources.html">Learning Resources</a></li>
+                        <li><a href="quizzes.html">Quizzes</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 GreenThumb Learning Platform. All rights reserved.</p>
+                <p>This website is for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
